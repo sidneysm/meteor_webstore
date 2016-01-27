@@ -1,0 +1,48 @@
+<template name="ProdutoDetalheLayout">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+                    <h2>Categorias</h2>
+                    {{> CategoriaLayout}}
+                </div>
+            </div>
+            <div class="col-sm-9 padding-right">
+                    <h2 class="title text-center">Produto</h2>
+                    <div class="product-details"><!--product-details-->
+                        <div class="col-sm-5">
+                            <div class="view-product">
+                                <img src="/{{produto.imagem}}" alt="" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="product-information"><!--/product-information-->
+                                <img src="images/product-details/new.jpg" class="newarrival" alt="" />
+                                <h2>{{produto.nome}}</h2>
+                                <p>Web ID: {{produto._id}}</p>
+                                <img src="images/product-details/rating.png" alt="" />
+                                <span>
+                                    <span>R$ {{produto.preco}}</span>
+                                    <label>Quantity:</label>
+                                    <input type="text" value="3" />
+                                    <button type="button" class="btn btn-default cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Comprar
+                                    </button>
+                                </span>
+                                <p><b>Disponibilidade:</b> Em estoque</p>
+                                <a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+                            </div><!--/product-information-->
+                        </div>
+                    </div><!--/product-details-->
+                    
+                    
+                    
+                   
+                </div>
+            </div>
+             
+    </div>
+    
+</template>

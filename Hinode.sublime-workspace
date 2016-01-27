@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"produtosCarrinhos"
+			],
+			[
+				"Se",
+				"Session.get	Meteor: Session.get(key)"
+			],
+			[
+				"produ",
+				"produtoForm"
+			],
+			[
+				"sr",
+				"script	Tag"
+			],
+			[
+				"eve",
+				"events	Meteor: Template.myTemplate.events(eventMap)"
+			],
+			[
+				"e",
+				"event	Meteor: Add a new event item"
+			],
+			[
+				"Pro",
+				"ProdutoDetalheLayout"
+			],
+			[
+				"Me",
+				"Meteor.user	Meteor.user()"
+			],
+			[
+				"pro",
+				"produto"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"prod",
+				"produto"
+			],
+			[
+				"se",
+				"selecionados"
+			],
+			[
+				"re",
+				"remove	Meteor: collection.remove(selector, [callback])"
+			],
+			[
+				"produto",
+				"produtos"
+			],
+			[
+				"produt",
+				"produto"
+			],
+			[
+				"car",
+				"carregarProdutos〔function〕"
+			],
+			[
+				"d",
+				"direcaoDaOrdenacao"
+			],
+			[
+				"s",
+				"scope"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"ng-s",
+				"ng-show	AngularJS"
+			],
+			[
+				"cla",
+				"class	Attr"
+			],
+			[
+				"cont",
+				"contato"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"po",
+				"produtos"
+			],
+			[
+				"con",
+				"contato〔argument〕"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"Lis",
+				"ListaDeComprasCtrl"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 138.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/layouts/MainLayout.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/helpers/produtoHelpers.js",
+		"/home/sidney/Projetos/Angular/ListaDeCompras/index.html",
+		"/home/sidney/Projetos/Angular/Pasta sem título/teste.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/layouts/HomeLayout.html",
+		"/home/sidney/Documentos/Eshopper/js/main.js",
+		"/home/sidney/Documentos/Eshopper/js/contact.js",
+		"/home/sidney/Documentos/Eshopper/index.html",
+		"/home/sidney/Documentos/Eshopper/js/gmaps.js",
+		"/home/sidney/Documentos/Eshopper/product-details.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/.meteor/packages",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/partials/produto/ProdutoDetalhe.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/partials/ShopLayout.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/lib/route.js",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/helpers/categoriaHelpers.js",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/partials/HeaderLayout.html",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/helpers/ShopLayout.js",
+		"/home/sidney/Projetos/Meteor/hinodeshop/client/layouts/Produto-SimgleLayout.html",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/ListaDeCompras.ng.html",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/client/app.js",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/client/index.html",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/server/publish.js",
+		"/home/sidney/Projetos/Python/Django/ambientevirtual/CursoOpcao/curso/views.py",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/client/congfig.js",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/modelos/Produto.js",
+		"/home/sidney/Projetos/Meteor/simple-todos-angular/simple-todos-angular.js",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/client/modelos/Produto.js",
+		"/home/sidney/Projetos/Meteor/simple-todos-angular/todos-list.ng.html",
+		"/home/sidney/Projetos/Meteor/simple-todos-angular/simple-todos-angular.css",
+		"/home/sidney/Projetos/Meteor/simple-todos-angular/simple-todos-angular.html",
+		"/home/sidney/Projetos/Meteor/simple-todos-angular/.meteor/packages",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/.meteor/versions",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/.meteor/packages",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/lib/parties-list.html",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/listaDeCompras.css",
+		"/home/sidney/Projetos/Meteor/listaDeCompras/index.html",
+		"/home/sidney/Projetos/Angular/ListaDeCompras/produtosList.json",
+		"/home/sidney/Projetos/Angular/ListaDeCompras/Back-End/produtosBackEnd.js",
+		"/home/sidney/Projetos/Angular/ListaDeCompras/footer.html",
+		"/home/sidney/Projetos/Angular/ListaDeCompras/lib/angular/angular-message.js",
+		"/home/sidney/Documentos/angular.js",
+		"/home/sidney/Projetos/Meteor/hinodeshop/models/Produto.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"btn, click .btn-default, click .cart",
+			"#t",
+			"#top",
+			"scrollUp",
+			"id",
+			"meteor",
+			"reactive",
+			"contatos",
+			"contato",
+			"produto",
+			"listaTelefonica",
+			"listaDeCompras"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Hinode.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

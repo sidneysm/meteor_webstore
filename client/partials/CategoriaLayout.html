@@ -1,0 +1,15 @@
+<template name="CategoriaLayout">
+<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+    {{#each categorias}}
+        {{> Categoria}}
+    {{/each}}
+</div><!--/category-products-->         
+</template>
+
+<template name="Categoria">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a href="#">{{nome}}</a></h4>
+        </div>
+    </div>
+</template>
