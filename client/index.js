@@ -1,10 +1,13 @@
 accountsUIBootstrap3.setLanguage('pt-BR');
 
+Template.registerHelper('currency', function(num){
+  return 'R$' + Number(num).toFixed(2);
+});
 
 Accounts.ui.config({
   extraSignupFields: [{
     fieldName: 'name',
-    fieldLabel: 'Nome'
+    fieldLabel: 'Nome Completo'
   }],
   requestPermissions: {},
   requestOfflineToken: {},

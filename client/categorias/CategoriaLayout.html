@@ -3,13 +3,13 @@
     {{#each categorias}}
         {{> Categoria}}
     {{/each}}
-</div><!--/category-products-->         
+</div><!--/category-products-->
 </template>
 
 <template name="Categoria">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h4 class="panel-title"><a href="#">{{nome}}</a></h4>
+            <h4 class="panel-title"><a id="categoria" href="">{{nome}}</a></h4>
         </div>
     </div>
 </template>
