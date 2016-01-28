@@ -23,7 +23,8 @@ kadira:flow-router
 kadira:blaze-layout
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
-
+accounts-base
+accounts-password
 matb33:bootstrap-glyphicons
 natestrauser:animate-css
 natestrauser:font-awesome

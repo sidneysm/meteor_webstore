@@ -1,2 +1,1 @@
-Categoria = new Mongo.Collection('categoria');
-
+Categorias = new Mongo.Collection('categorias');

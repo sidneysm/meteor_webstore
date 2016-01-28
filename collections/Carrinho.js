@@ -1,1 +1,1 @@
-Carrinho = Mongo.Collection('carrinho');
+Carrinho = new Mongo.Collection('carrinho');
