@@ -5,6 +5,7 @@ Template.Cabecalho.events({
     evt.preventDefault();
     var textoBusca = template.find("input");
     console.log(textoBusca.value)
+    Session.set('categoria', null);
     Session.set('filtro', textoBusca.value);
   }
 });

@@ -50,7 +50,7 @@ Meteor.startup(function () {
 Meteor.methods({
     addAoCarrinho:function (quantidade, produto, session) {
       if (quantidade > 0) {
-        CarrinhoIten.insert({
+        CarrinhoItem.insert({
           quantidade:quantidade,
           produto:produto,
           sessionid:session
