@@ -42,21 +42,20 @@ Meteor.startup(function () {
           imagem: "images/home/product1.jpg",
           categoria: "Rosto"
         });
-
       }
 
 });
 
 Meteor.methods({
-    addAoCarrinho:function (quantidade, produto, session) {
+    addAoCarrinho:function (quantidade, produto, userId) {
       if (quantidade > 0) {
         CarrinhoItem.insert({
           quantidade:quantidade,
           produto:produto,
-          sessionid:session
+          userid:userId
         });
       } else{
         console.log('Quantidade é zero');
       }
-    },
+    }    
 });

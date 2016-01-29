@@ -7,10 +7,10 @@ Template.ProdutoDetalheLayout.helpers({
 
 Template.ProdutoDetalheLayout.events({
     'click .cart': function (e, template) {
-        var quantidade = template.find('input').value;
+        var quantidade = parseInt(template.find('input').value);
         var produto = FlowRouter.getParam('id');
-        var sessionid = Meteor.default_connection._lastSessionId;
-        Meteor.call('addAoCarrinho', quantidade, produto, sessionid);
+        var userid = Meteor.userId();
+        Meteor.call('addAoCarrinho', quantidade, produto, userid);
         console.log("Ok" + FlowRouter.getParam('id'));
 
     }

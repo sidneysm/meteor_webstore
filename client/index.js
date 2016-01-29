@@ -27,4 +27,11 @@ FlowRouter.route('/produto/:id', {
     action() {
         BlazeLayout.render('MainLayout', {main: 'ProdutoDetalheLayout'});
     }
-})
+});
+
+FlowRouter.route('/carrinho', {
+    name: 'carrinho',
+    action() {
+        BlazeLayout.render('MainLayout', {main: 'Carrinho'});
+    }
+});
