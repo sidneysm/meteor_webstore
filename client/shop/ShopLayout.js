@@ -14,5 +14,10 @@ Template.ShopLayout.events({
   'click #produtos':function (evt, template) {
 		Session.set('categoria', null);
 		Session.set('filtro', null);
+	},
+	'click .add-to-cart': function (evt, template) {
+		produtoId = this._id;
+		userId = Meteor.userId();
+		Meteor.call('addAoCarrinho', 1, produtoId, userId);
 	}
 });

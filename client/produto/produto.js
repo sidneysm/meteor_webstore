@@ -8,10 +8,8 @@ Template.ProdutoDetalheLayout.helpers({
 Template.ProdutoDetalheLayout.events({
     'click .cart': function (e, template) {
         var quantidade = parseInt(template.find('input').value);
-        var produto = FlowRouter.getParam('id');
+        var produtoId = FlowRouter.getParam('id');
         var userid = Meteor.userId();
-        Meteor.call('addAoCarrinho', quantidade, produto, userid);
-        console.log("Ok" + FlowRouter.getParam('id'));
-
+        Meteor.call('addAoCarrinho', quantidade, produtoId, userid);
     }
 });

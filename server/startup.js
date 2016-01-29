@@ -47,15 +47,26 @@ Meteor.startup(function () {
 });
 
 Meteor.methods({
-    addAoCarrinho:function (quantidade, produto, userId) {
-      if (quantidade > 0) {
+    addAoCarrinho:function (quantidade, produtoId, userId) {
+      var item = CarrinhoItem.findOne({produto:produtoId, userid:Meteor.userId()})
+      if (item){
+        CarrinhoItem.update({_id:item._id}, {$set:{
+          quantidade: item.quantidade + quantidade
+        }});
+
+      } else if (quantidade > 0) {
+
         CarrinhoItem.insert({
           quantidade:quantidade,
-          produto:produto,
+          produto:produtoId,
           userid:userId
         });
       } else{
         console.log('Quantidade é zero');
       }
-    }    
+    },
+    removerDoCarrinho:function (id) {
+      CarrinhoItem.remove({_id:id});
+
+    }
 });

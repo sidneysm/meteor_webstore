@@ -9,3 +9,9 @@ Template.Cabecalho.events({
     Session.set('filtro', textoBusca.value);
   }
 });
+
+Template.Cabecalho.helpers({
+  cartQuantidade:function () {
+      return CarrinhoItem.find({userid:Meteor.userId()}).count();
+  }
+});

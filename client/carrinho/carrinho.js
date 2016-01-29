@@ -34,5 +34,8 @@ Template.Carrinho.events({
         quantidade: this.quantidade -= 1
       }});
     }
+  },
+  'click .cart_quantity_delete':function(evt, template){
+    Meteor.call('removerDoCarrinho', this._id);
   }
 });
