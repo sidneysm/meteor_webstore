@@ -2,7 +2,7 @@
 Template.Carrinho.helpers({
   carrItens: function () {
     carrinhoCompra = [];
-    var carrinhoItens = CarrinhoItem.find({userid:Meteor.userId()});
+    var carrinhoItens = CarrinhoItem.find();
     var total = 0;
 
     carrinhoItens.forEach(function(cartitem){
@@ -12,12 +12,12 @@ Template.Carrinho.helpers({
         cartitem.precoTotal = (Number(produto.preco) * cartitem.quantidade);
         cartitem.preco = produto.preco;
         cartitem.imagem = produto.imagem;
-        total += cartitem.preco;
+        total += cartitem.precoTotal;
         carrinhoCompra.push(cartitem);
     });
     carrinhoCompra.subtotal = total;
-    carrinhoCompra.tax = carrinhoCompra.subtotal * .06;
-    carrinhoCompra.total = carrinhoCompra.subtotal + carrinhoCompra.tax;
+    // carrinhoCompra.tax = carrinhoCompra.subtotal * .06;
+    carrinhoCompra.total = carrinhoCompra.subtotal;
     return carrinhoCompra;
   }
 });

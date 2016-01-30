@@ -10,7 +10,7 @@
             <td class="description"></td>
             <td class="price">Preço</td>
             <td class="quantity">Quantidade</td>
-            <td class="total">Total</td>
+            <td class="total">Sub-Total</td>
             <td></td>
           </tr>
         </thead>
@@ -49,9 +49,46 @@
             </tr>
           {{/each}}
         </tbody>
-
       </table>
     </div>
   </div>
 </section>
+
+<section id="do_action">
+  <div class="container">
+    <div class="heading">
+      <h3>O que você gostaria de fazer agora?</h3>
+      <p>Escolha se você quer usar um cupom de disconto</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="chose_area">
+          <ul class="user_option">
+            <li>
+              <input type="checkbox">
+              <label>Use seu cupom</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Presente?</label>
+            </li>
+          </ul>
+          <a class="btn btn-default update" href="/">Continue comprando</a>
+          <a class="btn btn-default check_out" href="/confirmar">Confirmar</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="total_area">
+          <ul>
+            <li>Sub Total <span>{{currency carrItens.total}}</span></li>
+            <li>Frete <span>Grátis</span></li>
+            <li>Total <span>{{currency carrItens.total}}</span></li>
+          </ul>
+          <a class="btn btn-default update" href="/">Continue comprando</a>
+          <a class="btn btn-default check_out" href="/confirmar">Confirmar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--/#do_action-->
 </template>

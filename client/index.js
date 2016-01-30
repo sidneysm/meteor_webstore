@@ -1,5 +1,11 @@
 accountsUIBootstrap3.setLanguage('pt-BR');
 
+Meteor.subscribe('produto');
+Meteor.subscribe('categorias');
+Meteor.subscribe('carrinhoItem');
+
+
+
 Template.registerHelper('currency', function(num){
   return 'R$' + Number(num).toFixed(2);
 });
@@ -33,5 +39,12 @@ FlowRouter.route('/carrinho', {
     name: 'carrinho',
     action() {
         BlazeLayout.render('MainLayout', {main: 'Carrinho'});
+    }
+});
+
+FlowRouter.route('/admin', {
+    name: 'carrinho',
+    action() {
+        BlazeLayout.render('MainLayout', {main: 'Admin'});
     }
 });

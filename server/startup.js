@@ -1,9 +1,13 @@
 Meteor.startup(function () {
+
+    
+
       //adicionar as categorias na inicialização
       if (Categorias.find().count() === 0 ) {
           Categorias.insert({nome: 'Proteção Solar'});
           Categorias.insert({nome: 'Rosto'});
           Categorias.insert({nome: 'Maquiagem'});
+          Categorias.insert({nome: 'Pernas e pés'});
           Categorias.insert({nome: 'Corpo'});
           Categorias.insert({nome: 'Cabelos'});
           Categorias.insert({nome: 'Desodorante'});

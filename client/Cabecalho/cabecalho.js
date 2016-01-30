@@ -1,7 +1,7 @@
 Session.setDefault("filtro", null);
 
 Template.Cabecalho.events({
-  'click .btn, click btn-default': function (evt, template){
+  'click .btn, click btn-default, click .buscar': function (evt, template){
     evt.preventDefault();
     var textoBusca = template.find("input");
     console.log(textoBusca.value)

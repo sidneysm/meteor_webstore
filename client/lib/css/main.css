@@ -265,7 +265,8 @@ a#scrollUp i{
   width: 155px;
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
-  background-position: 130px;
+  background-position: 740px;
+  margin-top: 1px;
 }
 
 
@@ -1782,6 +1783,14 @@ h2.title {
 }
 .update{
     margin-left: 40px;
+}
+
+.buscar{
+  background: #FE980F;
+  border: 0 none;
+  border-radius: 0;
+  margin-right: 15px;
+
 }
 
 .check_out {
