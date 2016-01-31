@@ -1,60 +1,35 @@
 
 Template.Admin.helpers({
-  categorias: function (){
-    return Categorias.find();
-  }
-});
-
-Template.Admin.events({
-    "click #cadastrar": function(event, template){
-        event.preventDefault();
-        var produtoNome = template.find('#nome').value;
-        var produtoCodigo = template.find('#codigo').value;
-        var produtoPreco = parseFloat(template.find('#preco').value.replace(',','.'));
-        var produtoDescricao = template.find('#descricao').value;
-        var produtoCategoria = template.find('#categoria').value;
-        var produtoImagem;
-
-        var file = $('#arquivo').get(0).files[0];
-        console.log(file)
-        // var fileObj = imagens.insert(file);
-        // console.log('Upload result: ', fileObj);
-        // console.log(imagens.find());
-        // produtoImagem = '/images/produtos/' + file.name;
-
-        imagens.insert(file, function (err, fileObj) {
-            if (err){
-                console.log("KD?");
-                alert("Não foi")
-            } else {
-                // handle success depending what you need to do
-                produtoImagem = 'public/images/produtos/' + fileObj._id;
-                console.log(produtoImagem);
+    categorias: function (){
+        return Categorias.find();
+    },
+    myCallbacks: function() {
+        return {
+            formData: function() { return { id: "232323", other: Session.get("ReactiveParam") } },
+            finished: function(index, fileInfo, context) {
+                imagem = 'images/produtos/' + fileInfo.name;
+                Meteor.call(
+                    'adicionarProduto',
+                    nome.value,
+                    imagem,
+                    codigo.value,
+                    descricao.value,
+                    categoria.value,
+                    preco.value
+                );
             }
-        });
-
-
-    //
-    // FS.Utility.eachFile(event, function(file) {
-    //     Images.insert(file, function (err, fileObj) {
-    //         if (err){
-    //             console.log("KD?");
-    //             alert("Não foi")
-    //         } else {
-    //             // handle success depending what you need to do
-    //             produtoImagem = 'public/images/produtos/' + fileObj._id;
-    //             console.log(produtoImagem);
-    //         }
-    //     });
-    //  });
-
-        Produto.insert({
-          _id: produtoCodigo,
-          nome: produtoNome,
-          categoria: produtoCategoria,
-          preco: produtoPreco,
-          descricao:produtoDescricao,
-          imagem: fileObj
-        });
+        }
     }
+});
+Template.Admin.onRendered = function(){
+    var nome = this.$('#nome').value;
+
+    var codigo = this.$('#codigo').value;
+    var preco = parseFloat(this.$('#preco').value.replace(',','.'));
+    var descricao = this.$('#descricao').value;
+    var categoria = this.$('#categoria').value;
+
+}
+Template.Admin.events({
+
 });

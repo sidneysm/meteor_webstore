@@ -4,7 +4,18 @@ Meteor.subscribe('produto');
 Meteor.subscribe('categorias');
 Meteor.subscribe('carrinhoItem');
 
+Meteor.startup(function() {
+    Uploader.uploadUrl = Meteor.absoluteUrl("upload"); // Cordova needs absolute URL
+});
 
+Uploader.localisation = {
+    browse: "Escolher foto",
+    cancelled: "Cancelado",
+    remove: "Remover",
+    upload: "Cadastrar",
+    done: "Pronto",
+    cancel: "Cancelar"
+}
 
 Template.registerHelper('currency', function(num){
   return 'R$' + Number(num).toFixed(2);
