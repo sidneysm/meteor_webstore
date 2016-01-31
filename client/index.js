@@ -28,10 +28,11 @@ Accounts.ui.config({
   }],
   requestPermissions: {},
   requestOfflineToken: {},
-  passwordSignupFields: "USERNAME_AND_OPTIONAL_EMAIL",
+  passwordSignupFields: "USERNAME_AND_EMAIL",
 });
 
 Session.setDefault('categoria', null);
+
 FlowRouter.route('/', {
     name: 'home',
     action() {
