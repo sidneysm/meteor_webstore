@@ -10,7 +10,3 @@ Meteor.publish('categorias', function () {
 Meteor.publish('carrinhoItem', function () {
   return CarrinhoItem.find({userid:this.userId});
 });
-
-Meteor.publish('imagens', function () {
-  return images.find();
-});

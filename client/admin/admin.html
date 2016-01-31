@@ -8,12 +8,7 @@
       <div class="col-sm-4 col-sm-offset-1">
         <div class="shopper-info">
           <form id="cadastrarProduto">
-            <p>
-              Escolher foto
-              <span class="btn btn-primary btn-file">
-                <input type="file" id="arquivo" class="file fileInput">
-              </span>
-            </p>
+
 
             <input type="text" id="nome" placeholder="Nome" />
             <input type="text" id="codigo" placeholder="Código" />
@@ -25,8 +20,10 @@
                 <option>{{nome}}</option>
               {{/each}}
             </select>
-            <a id="cadastrar" class="btn btn-primary">Cadastrar</a>
-            <a class="btn btn-primary limparFomulário">Limpar</a>
+            <p>
+              Escolher foto
+              {{> upload_bootstrap callbacks=myCallbacks}}
+            </p>
           </form>
         </div>
 
