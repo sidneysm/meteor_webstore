@@ -32,7 +32,6 @@ Accounts.ui.config({
 });
 
 Session.setDefault('categoria', null);
-
 FlowRouter.route('/', {
     name: 'home',
     action() {
