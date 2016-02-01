@@ -1,3 +1,5 @@
+
+
 Meteor.startup(function () {
 
     Meteor.startup(function () {
@@ -96,5 +98,15 @@ Meteor.methods({
           descricao:descricaoProd,
           imagem: imagemProd
         });
+    },
+    pegarEstados:function(){
+        var estadosObj = JSON.parse(Assets.getText("cidades.json"));
+        var estados = [];
+        for (var i = 0; i < estadosObj.estados.length; i++) {
+            estados.push(estadosObj.estados[i].nome);
+            console.log(estadosObj.estados[i].nome);
+        }
+        console.log(estados);
+        return estadosObj.estados;
     }
 });
