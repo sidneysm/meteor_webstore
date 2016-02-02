@@ -18,7 +18,7 @@
           {{#each carrItens}}
           <tr>
             <td class="cart_product">
-              <a href="produto/{{produto}}"><img src="{{imagem}}" alt=""></a>
+              <a href="produto/{{produto}}"><img src="{{imagem}}" alt="" height="80" width="80"></a>
             </td>
             <td class="cart_description">
               <h4><a href="">{{produtonome}}</a></h4>
@@ -30,7 +30,7 @@
             <td class="cart_quantity">
               <div class="cart_quantity_button">
                 <a class="cart_quantity_up" href=""> + </a>
-                <input class="cart_quantity_input" type="text" name="quantity" value={{quantidade}} autocomplete="off" size="2">
+                <input class="cart_quantity_input" type="text" name="quantity" value={{quantidade}} autocomplete="off" size="2" readonly="readonly">
                 <a class="cart_quantity_down" href=""> - </a>
               </div>
             </td>
@@ -74,7 +74,7 @@
             </li>
           </ul>
           <a class="btn btn-default update" href="/">Continue comprando</a>
-          <a class="btn btn-default check_out" href="/confirmar">Confirmar</a>
+          <a class="btn btn-default check_out" href="/confirmacao">Confirmar</a>
         </div>
       </div>
       <div class="col-sm-6">
@@ -85,7 +85,7 @@
             <li>Total <span>{{currency carrItens.total}}</span></li>
           </ul>
           <a class="btn btn-default update" href="/">Continue comprando</a>
-          <a class="btn btn-default check_out" href="/confirmar">Confirmar</a>
+          <a class="btn btn-default check_out" href="/confirmacao">Confirmar</a>
         </div>
       </div>
     </div>
