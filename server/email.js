@@ -1,7 +1,9 @@
 
 Meteor.startup(function(){
-    process.env.MAIL_URL = 'smtp://sidneyddd@hotmail.com:yendis-100@smtp.live.com:587';
-
+    process.env.MAIL_URL = 'smtp://' +
+        encodeURIComponent('sidneyddd@hotmail.com') + ':' +
+        encodeURIComponent('yendis-100') + '@' +
+        encodeURIComponent('smtp.live.com') + ':' + '587';
     //-- Set the from address
     Accounts.emailTemplates.from = 'contato@hinodeshop.com.br';
 

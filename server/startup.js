@@ -3,8 +3,8 @@
 Meteor.startup(function () {
     Meteor.startup(function () {
         UploadServer.init({
-            tmpDir: process.env.PWD + '/public/images/.tmp',
-            uploadDir: process.env.PWD + '/public/images/produtos',
+            tmpDir: process.env.PWD + '/.public/images/tmp',
+            uploadDir: process.env.PWD + '/.public/images/produtos',
             checkCreateDirectories: true, //create the directories for you
             overwrite: true,
             getFileName : function (fileInfo, formData) {
