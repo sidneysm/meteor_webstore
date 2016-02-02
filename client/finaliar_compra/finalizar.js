@@ -4,13 +4,21 @@ Template.finalizar_compra.helpers({
             Session.set('estados', result);
         });
         return Session.get('estados');
+    },
+    cidades:function () {
+        Meteor.call('pegarCidades', Session.get('estadoSelecionado'), function(err, result) {
+            Session.set('cidades', result);
+        });
+
+        return Session.get('cidades');
+
     }
-    
 });
 
 
 Template.finalizar_compra.events({
-    'click #chamaJson': function (evt, tmp){
-
+    'change #estados': function (evt, tmp){
+        evt.preventDefault();
+        Session.set('estadoSelecionado', tmp.find('#estados').value);
     }
 });

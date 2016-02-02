@@ -16,24 +16,23 @@
                             <p>Endereço de entrega</p>
                             <div class="form-two">
 								<form>
-									<input type="text" placeholder="Nome Completo">
+									<input type="text" placeholder="Nome Completo*">
 									<input type="email" placeholder="Email*">
 									<select type="text" id="estados">
-									    <option>-- Estado --</option>
+									    <option>-- Escolha o estado --</option>
                                         {{#each estados}}
                                             <option>{{nome}}</option>
                                         {{/each}}
 									</select>
                                     <select type="text" id="cidades">
-									    <option>-- Cidade --</option>
+									    <option>-- Escolha a cidade --</option>
                                         {{#each cidades}}
                                             <option>{{nome}}</option>
                                         {{/each}}
 									</select>
-									<input type="text" placeholder="Bairro">
-									<input type="text" placeholder="CEP">
-                                    <input type="text" placeholder="Rua/Avenida">
-									<input type="text" placeholder="Telefone">
+									<input type="text" placeholder="Rua/Avenida/Nº/Bairro*">
+									<input type="text" placeholder="CEP*">
+									<input type="text" placeholder="Telefone*">
 								</form>
                             </div>
                         </div>
@@ -41,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <button id="chamaJson">TesteJson</button>
+
         </div>
     </div>
 </template>
