@@ -5,7 +5,7 @@ Meteor.startup(function(){
         encodeURIComponent('yendis-100') + '@' +
         encodeURIComponent('smtp.live.com') + ':' + '587';
     //-- Set the from address
-    Accounts.emailTemplates.from = 'contato@hinodeshop.com.br';
+    Accounts.emailTemplates.from = 'sidneyddd@hotmail.com';
 
     //-- Application name
     Accounts.emailTemplates.siteName = 'Hinode Shop';
