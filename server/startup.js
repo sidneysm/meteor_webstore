@@ -1,5 +1,6 @@
-Meteor.startup(function () {
 
+
+Meteor.startup(function () {
     Meteor.startup(function () {
         UploadServer.init({
             tmpDir: process.env.PWD + '/public/images/.tmp',
@@ -34,9 +35,8 @@ Meteor.startup(function () {
         Categorias.insert({nome: 'Bem-estar'});
     }
 
-
+    //adicionar as categorias na inicialização (Tirar no ambiente de produção)
     if (Produto.find().count() === 0){
-
         Produto.insert({
             nome: 'Perfume Empire',
             preco: 100,
@@ -60,41 +60,6 @@ Meteor.startup(function () {
             preco: 100,
             imagem: "images/home/product1.jpg",
             categoria: "Rosto"
-        });
-    }
-
-});
-
-Meteor.methods({
-    addAoCarrinho:function (quantidade, produtoId, userId) {
-        var item = CarrinhoItem.findOne({produto:produtoId, userid:Meteor.userId()})
-        if (item){
-            CarrinhoItem.update({_id:item._id}, {$set:{
-                quantidade: item.quantidade + quantidade
-            }});
-
-        } else if (quantidade > 0) {
-
-            CarrinhoItem.insert({
-                quantidade:quantidade,
-                produto:produtoId,
-                userid:userId
-            });
-        } else{
-            console.log('Quantidade é zero');
-        }
-    },
-    removerDoCarrinho:function (id) {
-        CarrinhoItem.remove({_id:id});
-    },
-    adicionarProduto:function(nomeProd, imagemProd, codProd, descricaoProd, categoriaProd, precoProd){
-        Produto.insert({
-          _id: codProd,
-          nome: nomeProd,
-          categoria: categoriaProd,
-          preco: precoProd,
-          descricao:descricaoProd,
-          imagem: imagemProd
         });
     }
 });
