@@ -1,9 +1,9 @@
 
 Meteor.startup(function(){
     process.env.MAIL_URL = 'smtp://' +
-        encodeURIComponent('sidneyddd@hotmail.com') + ':' +
-        encodeURIComponent('yendis-100') + '@' +
-        encodeURIComponent('smtp.live.com') + ':' + '587';
+        encodeURIComponent('postmaster@appb0a422c3ebac4a548479efef4bb18bfb.mailgun.org') + ':' +
+        encodeURIComponent('b91a5efbaedeacdf023577b1884bf479') + '@' +
+        encodeURIComponent('smtp.mailgun.org') + ':' + '587';
     //-- Set the from address
     Accounts.emailTemplates.from = 'sidneyddd@hotmail.com';
 
