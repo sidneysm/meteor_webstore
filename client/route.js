@@ -21,8 +21,13 @@ FlowRouter.route('/carrinho', {
 });
 
 FlowRouter.route('/admin', {
-    name: 'carrinho',
+    name: 'dashboard',
     action() {
+        var loggedInUser = Meteor.user();
+        if (!loggedInUser ||
+        !Roles.userIsInRole(loggedInUser,['admin'], 'admin')) {
+            FlowRouter.go('/');
+        }
         BlazeLayout.render('MainLayout', {main: 'Admin'});
     }
 });
