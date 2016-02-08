@@ -1,0 +1,37 @@
+<template name="adicionarProduto">
+    <div class="step-one">
+        <h2 class="heading">Cadastrar novo produto</h2>
+    </div>
+
+    <div class="shopper-informations">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+
+                <div class="shopper-info">
+                    <form id="cadastrarProduto">
+                        <p>
+                            Escolher foto
+                            <span class="btn btn-default btn-file">
+                                <input disabled={{isSelecionado}} type="file" class="file fileInput" value="">
+                            </span>
+                        </p>
+                        <input type="text" id="nome" placeholder="Nome" />
+                        <input type="text" id="codigo" placeholder="Código" />
+                        <input type="text" id="preco" placeholder="Preço" />
+                        <textarea type="textarea" id="descricao" rows="6" placeholder="Descrição"></textarea>
+                        <select id="categoria">
+                            <option>-- Categoria --</option>
+                            {{#each categorias}}
+                            <option>{{nome}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" class="btn btn-primary cadastrar">
+                            Adicionar Produto
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

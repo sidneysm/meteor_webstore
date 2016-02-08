@@ -11,6 +11,10 @@ Meteor.publish('carrinhoItem', function () {
   return CarrinhoItem.find({userid:this.userId});
 });
 
+Meteor.publish('images', function () {
+  return Images.find();
+});
+
 Meteor.publish('admin', function (group) {
   if (Roles.userIsInRole(this.userId, ['admin'], group)) {
 
