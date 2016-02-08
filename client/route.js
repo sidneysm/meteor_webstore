@@ -20,16 +20,34 @@ FlowRouter.route('/carrinho', {
     }
 });
 
-FlowRouter.route('/admin', {
-    name: 'carrinho',
-    action() {
-        BlazeLayout.render('MainLayout', {main: 'Admin'});
-    }
-});
+// FlowRouter.route('/admin', {
+//     name: 'dashboard',
+//     action() {
+//         var loggedInUser = Meteor.user();
+//         if (!loggedInUser ||
+//         !Roles.userIsInRole(loggedInUser,['admin'], 'admin')) {
+//             FlowRouter.go('/');
+//         }
+//         BlazeLayout.render('AdminLayout', {main: 'Admin'});
+//     }
+// });
 
 FlowRouter.route('/confirmacao', {
     name: 'finalizar_compra',
     action() {
         BlazeLayout.render('MainLayout', {main: 'finalizar_compra'});
     }
+});
+
+FlowRouter.route("/admin/adicionarProduto", {
+    name: 'dashboard',
+    action() {
+        // var loggedInUser = Meteor.user();
+        // if (!loggedInUser ||
+        // !Roles.userIsInRole(loggedInUser,['admin'], 'admin')) {
+        //     FlowRouter.go('/');
+        // }
+        BlazeLayout.render('AdminLayout', {main: 'adicionarProduto'});
+    }
+
 });
