@@ -1,0 +1,42 @@
+<template name="AdminLayout">
+    <header>
+          {{> Cabecalho}}
+    </header>
+    <main>
+        <div class="container">
+
+            <nav class="navbar navbar-default header_top" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse " id="navbar">
+                  <ul class="nav navbar-nav nav-pills">
+                        <li><a href="/admin/adicionarProduto">Cadastrar Produto</a></li>
+                        <li><a href="/admin/editarProduto">Editar Produto</a></li>
+                        <li><a href="/admin/vendas">Vendas</a></li>
+
+                        <li><a href="/admin/graficos">Gráficos</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"></a></li>
+
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        {{> Template.dynamic template=main}}
+    </div>
+    </main>
+    <footer>
+        {{> RodapeLayout}}
+    </footer>
+
+</template>

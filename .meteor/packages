@@ -34,7 +34,8 @@ aldeed:autoform
 meteortoys:allthings
 voyag3r:scrollup
 alanning:roles
-tomi:upload-server
-tomi:upload-jquery
+#tomi:upload-server
+#tomi:upload-jquery
 email
-http
+cfs:standard-packages
+cfs:gridfs

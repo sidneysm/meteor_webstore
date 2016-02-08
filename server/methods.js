@@ -27,7 +27,8 @@ Meteor.methods({
           categoria: categoriaProd,
           preco: precoProd,
           descricao:descricaoProd,
-          imagem: imagemProd
+          imagem: imagemProd,
+          adicionadoEm: new Date()
         });
     },
     pegarEstados:function(){

@@ -2,20 +2,20 @@
 
 Meteor.startup(function () {
     Meteor.startup(function () {
-        UploadServer.init({
-            tmpDir: process.env.PWD + '/public/images/.tmp',
-            uploadDir: process.env.PWD + '/public/images/produtos',
-            checkCreateDirectories: true, //create the directories for you
-            overwrite: true,
-            getFileName : function (fileInfo, formData) {
-                return fileInfo.name;
-            },
-            mimeTypes: {
-                "jpeg": "image/jpeg",
-                "jpg": "image/jpeg",
-                "png": "image/png"
-            }
-        });
+        // UploadServer.init({
+        //     tmpDir: process.env.PWD + '/public/images/.tmp',
+        //     uploadDir: process.env.PWD + '/public/images/produtos',
+        //     checkCreateDirectories: true, //create the directories for you
+        //     overwrite: true,
+        //     getFileName : function (fileInfo, formData) {
+        //         return fileInfo.name;
+        //     },
+        //     mimeTypes: {
+        //         "jpeg": "image/jpeg",
+        //         "jpg": "image/jpeg",
+        //         "png": "image/png"
+        //     }
+        // });
     });
 
     //adicionar as categorias na inicialização
