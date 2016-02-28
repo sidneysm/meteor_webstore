@@ -16,7 +16,7 @@
                             <ul class="nav navbar-nav">
                               {{#if currentUser}}
                                 {{#if isInRole 'admin'  'admin'}}
-                                    <li><a href="/admin"><i class="fa fa-user"></i>Dashboard</a></li>
+                                    <li><a href="/admin/adicionarProduto"><i class="fa fa-user"></i>Dashboard</a></li>
                                 {{else}}
                                     <li><a href="/perfil/{{currentUser._id}}"><i class="fa fa-user"></i>Meu Perfil</a></li>
                                 {{/if}}
