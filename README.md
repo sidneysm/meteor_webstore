@@ -1,13 +1,13 @@
 # meteor_webstore
-A sample web store build with MeteorJS.
+A simple web store app build with MeteorJS.
 
 A create this project to learm how use meteor.
 
-done
+## Done
 - product list
 - product search
 - cart itens
 
-to do
+## To Do
 - payment method
 - to complete admin screem
